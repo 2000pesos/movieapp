@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="row">
+          <h3 style="padding: 5px"><a ng-click="backToListings()">&lt; Listings</a>&nbsp;MovieDetail</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12"><h2>{{current_movie.title}}</h2></div>
+    </div>
+    <div class="row">
+       <div class="col-xs-6">
+            <img style="max-width:100%;" src="http://image.tmdb.org/t/p/w185/{{current_movie.poster_path}}" />
+        </div>
+        <div class="col-xs-6">
+            <!-- Datos del vendedor y titulo del producto -->
+            <h3>{{current_movie.release_date_year}}</h3>    
+            <h3 style="font-style: italic;">{{current_movie.runtime}} min</h3>
+            <h4>{{current_movie.vote_average}}/10</h4>
+        </div>           
+    </div>
+    <div class="row">
+        <div class="col-xs-12"><p style="padding: 5px; margin-top: 10px;">{{current_movie.overview}}</p></div>
+    </div>
+</div>
